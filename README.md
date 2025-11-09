@@ -24,7 +24,7 @@ This notebook trains a credit card fraud detection model using a Random Forest c
 
 ## How to Use
 
-1. Upload `creditcard.csv` into the notebook.
+1. Download 'creditcard.csv' from here https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud and upload it into the notebook.
 2. Run all cells in order to train the model and view results.
 3. Download the trained model if needed:
 
