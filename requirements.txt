@@ -1,13 +1,5 @@
 pandas
-<<<<<<< HEAD
-numpy
-=======
->>>>>>> baea5501c35f33d79d5283ae056a1fbedbb627bc
 scikit-learn
 imbalanced-learn
 joblib
 streamlit
-<<<<<<< HEAD
-matplotlib
-=======
->>>>>>> baea5501c35f33d79d5283ae056a1fbedbb627bc
