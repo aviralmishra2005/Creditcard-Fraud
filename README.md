@@ -1,61 +1,42 @@
----
-
-# Credit Card Fraud Detection with Visualizations
+# Credit Card Fraud Detection (Jupyter/Colab Project)
 
 ## Overview
 
-This project trains a **Random Forest** model to detect credit card fraud, handling class imbalance with **SMOTE**. It includes:
-
-* Training and evaluating the model
-* Visualizing class distribution and feature importance
-* Saving the trained model for later predictions
-
-Designed to run in **Google Colab** or any Jupyter Notebook.
+This notebook trains a credit card fraud detection model using a Random Forest classifier combined with SMOTE to handle the dataset's heavy class imbalance. It includes visualizations, model evaluation, and example predictions.
 
 ---
 
-## Usage
+## What This Project Does
 
-1. **Open Colab** and create a new notebook.
-2. **Upload your CSV** (creditcard.csv):
+* Loads and explores the **creditcard.csv** dataset
+* Visualizes class imbalance
+* Builds a pipeline with **StandardScaler + SMOTE + RandomForest**
+* Trains and evaluates the model
+* Displays:
 
-```python
-from google.colab import files
-uploaded = files.upload()
-```
-
-3. **Run the notebook cells** in order:
-
-   * Install missing libraries
-   * Load and explore dataset
-   * Train model
-   * Evaluate and visualize results
-   * Save model (`model.joblib`)
-
-4. **Download files** if needed:
-
-```python
-from google.colab import files
-files.download("model.joblib")       # Trained model
-results.to_csv("predictions.csv")    # Predictions
-files.download("predictions.csv")
-```
+  * Class distribution plot
+  * Confusion matrix
+  * Feature importance chart
+* Saves the trained model as `model.joblib`
+* Generates sample predictions with fraud probability scores
 
 ---
 
-## Features & Visualizations
+## How to Use
 
-* Class distribution plot (Legit vs Fraud)
-* Confusion matrix
-* Feature importance ranking
-* Classification metrics (Precision, Recall, F1-score, Accuracy)
+1. Upload `creditcard.csv` into the notebook.
+2. Run all cells in order to train the model and view results.
+3. Download the trained model if needed:
+
+   ```python
+   files.download("model.joblib")
+   ```
 
 ---
 
 ## Notes
 
-* Dataset must include a `Class` column (0 = Legit, 1 = Fraud)
-* `requirements.txt` contains all needed libraries
-* You can modify the model or add new visualizations as needed
+* The dataset must include a **Class** column (0 = legit, 1 = fraud).
+* All steps run in a single notebook with no additional setup beyond uploading the CSV.
 
 ---
